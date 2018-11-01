@@ -1,0 +1,19 @@
+{
+  "name": "law",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/firestore": "^0.18.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "firebase-admin": "^6.1.0",
+    "nodemon": "^1.18.5",
+    "owl.carousel": "^2.3.4"
+  }
+}
