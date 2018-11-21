@@ -36,7 +36,7 @@ console.log(articleid.toString());
           res.render('article.ejs',{data:"ERROR 404 NOT FOUND",pictureurl:""});
         } else {
           // console.log('Document data:', doc.data());
-  res.render('article.ejs',{data:doc.data().subtitle,pictureurl:doc.data().pictureurl,aid:articleid});
+  res.render('article.ejs',{data:doc.data().subtitle,pictureurl:doc.data().pictureurl,aid:articleid,tt:doc.data().title});
         }
       })
       .catch(err => {
