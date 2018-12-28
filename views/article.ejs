@@ -1,441 +1,342 @@
+<!DOCTYPE html>
 
-  <!DOCTYPE html>
 
- 
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      
-      
-      <link href="https://fonts.googleapis.com/css?family=Coustard|Questrial" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300, 700" rel="stylesheet">
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-    
-      <!-- font awesome -->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-      <title>Gavel and Beyond</title>
-    </head>
-    <body class="light -grey">
-    
-      <!-- navbar -->
-      <header>
-          <!-- <div class="navbar-fxed">
-              <nav>
-                <div class="nav-wrapper deep-orange darken-4 ">
-    
-                        <div class="container">
-                           
-                          <a href="/" class="brand-logo white-text">Gavel and Beyond</a>  
-                        <a href="/" class="sidenav-trigger" data-target="mobile-menu">
-                            <i class="material-icons">menu</i>
-                        </a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="/" class="white-text">Insolvency</a></li>
-                            <li><a href="/" class="white-text">Contract</a></li>
-                            <li><a href="/" class="white-text">Arbitration</a></li>
-                            <li><a href="/" class="white-text">Specific Relief</a></li>
-                            <li><a href="/" class="white-text">Guest Column</a></li>
-                    
-                        </ul>
-                        <ul class="sidenav" id="mobile-menu">
-                            <li><a href="/">Insolvency</a></li>
-                            <li><a href="/">Contract</a></li>
-                            <li><a href="/">Arbitration</a></li>
-                            <li><a href="/">Specific Relief</a></li>
-                    
-                        </ul>
-                        
-                        </div>
-                    </div>
-          
-        </nav>
-    </div> -->
-    
-        <!-- <div class="flex-container">
-            <div style="flex-grow: 1">
 
-            </div>
-                <div class="card-panel hoverable" style="padding: 50px; flex-grow: 6"> 
-                        <h2>demonstration of virtual article</h2>
-                        <img src=<%= pictureurl %> class="resizer">
-                        <div style="width: 100%; background: lightblue ;display: flex">
-                            <div style="flex-grow: 6; text-align: center">
-                                <p id="para">
-                                    <%= data %>
-                              </p>
-                            </div>
-                        </div>    
-                      </div> 
-                
-            <div style="flex-grow: 1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-                </div>
-        </div> -->
-    <!-- // new nav here -->
-    <div class="navbar-fixed">
-            <nav>
-           <div class="nav-wrapper  deep-orange darken-4">
-               <div class="container">
-                    <a href="/" class="brand-logo white-text">Gavel and Beyond</a>  
-                    <a href="/" class="sidenav-trigger" data-target="mobile-menu">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="/" class="white-text">Insolvency</a></li>
-                        <li><a href="/" class="white-text">Contract</a></li>
-                        <li><a href="/" class="white-text">Arbitration</a></li>
-                        <li><a href="/" class="white-text">Specific Relief</a></li>
-                        <li><a href="/" class="white-text">Guest Column</a></li>
-                
-                    </ul>
-                    <ul class="sidenav" id="mobile-menu">
-                        <li><a href="/">Insolvency</a></li>
-                        <li><a href="/">Contract</a></li>
-                        <li><a href="/">Arbitration</a></li>
-                        <li><a href="/">Specific Relief</a></li>
-                
-                    </ul>
-               </div>
-                
-           </div>
-         </nav>
-         </div>
-       
-       
-        <div style="
-        background: rgb(243, 243, 243);
-        display: flex;
-        align-items: stretch;">
-            <div style="flex-grow: 2;
-            width: 100px;
-            margin: 10px;
-            text-align: center;">
-            </div>
-            <div class="card-panel" style="
-            background-color: rgb(255, 255, 255);
-            width: 100px;
-            margin: 10px;
-            
-            font-size: 20px;
-            padding: 4%;
-            flex-grow: 10">
-            <div style="padding: 9%">
-                
-            <h4 id="heading" style="color: #333333 ;margin-bottom: 10%; font-family: 'Roboto Slab', sans-serif; margin-bottom: 0px" >
-   <%= tt%>
-            </h4>
-            <p style="font-size: 14px; color: grey; margin-top: 5px; margin-bottom: 30px">John Doe, 31st November, 2012</p>
-              <p id ="data" style="display: none;">
-                  <%= data %>
-              </p>
-                <p id="paradox" class="contents" style="font-family: 'Roboto Slab', serif; font-size: 18px; color: #292929;letter-spacing: .01rem">
-            
-                    
-                </p>
-             
-                <div class="divider"></div>
-                <br>
-                <br>
-                   
-              <p id="aid" style=" visibility: hidden"><b><%= aid %></b>  </p>  
-                <br>
-                <br>
-                <!-- <h6 style="text-align: center">Add a comment</h6>
-                <div class="row">
-                <form class="col s12">
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <textarea id="textarea1" class="materialize-textarea"></textarea>
-                              <label for="textarea1">Comment</label>
-                              
-                            </div>
-                          </div>
-                </form>
-                      </div>
-                      <br>
-                      <div class="row">
-                      <div class="input-field col s12">
-                            <input id="name" type="text" class="validate">
-                            <label for="name">Name*</label>
-                          </div>
-                        </div>
-                  
-                         
-                              <div class="row">
-                                <div class="input-field col s12">
-                                  <input id="email" type="email" class="validate">
-                                  <label for="email" data-error="wrong" data-success="right">Email*</label>
-                                  
-                                </div>
-                              </div>
-                      
-                          
-                          <div class="input-field col s12">
-                                <input id="website" type="text">
-                                <label for="website">Website</label>
-                              </div>
-                              <br>
-                              <button class="btn waves-effect waves-light" type="submit" name="action" onclick="savecomment()">Submit
-                                    <i class="material-icons right">send</i>
-                                  </button> -->
-            </div>
-            
-        </div>
-             <div style="flex-grow: 2;
-                            width: 100px;
-                            margin: 10px;
-                            text-align: center;">
-            </div>
-                      
-                        
-                            
-            </div>
-            <!-- comments section -->
-            <div
-             style="display:flex;
-             background: rgb(248, 248, 248);
-             align-items: stretch;">
 
-                <div style="flex-grow: 2;
-                width:100px;
-                margin:10px;
-                text-align: center;"></div>
+    <link href="https://fonts.googleapis.com/css?family=Coustard|Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300, 700" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 
-                <div class="card-panel" style="
-                background-color: white;
-                width: 100px;
-                margin: 10px;
-                text-align: justify;
-                font-size: 20px;
-                padding: 4%;
-                flex-grow: 10">
-                <div style="padding-right: 9%; padding-left: 9%">
-                    
-            
-           <h4 style="text-align: center; color: #333333 ;margin-bottom: 10%; font-family: 'Roboto Slab', sans-serif; margin-bottom: 0px">Add a comment</h4>
-           <div class="row">
-           <form class="col s12">
-                     <div class="row">
-                       <div class="input-field col s12" style="margin-bottom: 5px">
-                         <textarea id="comment"  class="materialize-textarea"></textarea>
-                         <label for="comment">Comment</label>
-                         
-                       </div>
-                     </div>
-           </form>
-                 </div>
-                 <div class="row">
-                 <div class="input-field col s12">
-                       <input id="name" type="text" class="validate">
-                       <label for="name">Name*</label>
-                     </div>
-                   </div>
-             
-                    
-                         <div class="row">
-                           <div class="input-field col s12">
-                             <input id="email" type="email" class="validate">
-                             <label for="email" data-error="wrong" data-success="right">Email*</label>
-                             
-                           </div>
-                         </div>
-                 
-                     
-                     <div class="input-field col s12">
-                           <input id="website" type="text">
-                           <label for="website">Website</label>
-                         </div>
-                         <br>
-                         <button class="btn waves-effect waves-light" type="submit" name="action" onclick="savecomment()">Post Comment
-                               <i class="material-icons right">send</i>
-                             </button>
-            
-            
-                            </div>
-                           <div style="margin-top: 20px" class="divider"></div>
-                           <br>
-                           <div style="padding-left: 10%; padding-right: 10%">
-                               
-                            <h4 style="text-align: center;color: #333333 ;margin-bottom: 10%; font-family: 'Roboto Slab', sans-serif; margin-bottom: 0px">Comments </h4>
-                            <!-- Comments go here -->
-                            <div id="foo">
-                                    
-                                    
-                                </div>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Gavel and Beyond</title>
+</head>
 
-                                
+<body class="light -grey" style="background:rgb(243, 243, 243) ">
 
-                                     
-
-                            
-                            
-                           </div>
-
-            </div>
-             <div style="flex-grow: 2;
-             width:100px;
-             margin:10px;
-             text-align: center;"></div>
-             
-            
-            
-            </div>
-   
-  
-      <!-- footer -->
-      <footer class="page-footer grey darken-3">
-          <div class=container>
-             <div class=row>
-                 <div class="col s12 l6">
-                     <h5>About us</h4>
-                     <p>Information</p>
-                     <p>Privacy Policy</p>
-                 </div>
-                <div class="col s12 l4 offset-l2">
-                    <h5>Connect</h5>
-                    <ul>
-                        <li>
-                            <a href="" class="grey-text text-lighten-3">
-                                Facebook
-                               </a>
-                            
-                         </li>
-                         <li>
-                            <a href="" class="grey-text text-lighten-3">
-                                Instagram
+    <!-- navbar -->
+    <header>
+            <div class="navbar-fixed">
+                    <nav>
+                   <div class="nav-wrapper  deep-orange darken-4">
+                       <div class="container">
+                            <a href="/" class="brand-logo white-text"  style="position: relative; top:1px">Gavel and Beyond</a>  
+                            <a href="/" class="sidenav-trigger left" data-target="mobile-menu">
+                                <i class="material-icons ">menu</i>
                             </a>
-                            
-                         </li>
-                    </ul>
-                </div>
-             </div> 
-          </div>
-          <div class="footer-copyright grey darken-4">
-              <div class="container center-align">
-                  &copy; 2018 legal
-              </div>
-          </div>
+                            <ul class="right  hide-on-med-and-down">
+                                <li><a href="/" class="white-text">Insolvency</a></li>
+                                <li><a href="/" class="white-text">Contract Specific Relief</a></li>
+                                <li><a href="/" class="white-text">Arbitration</a></li>
+                                <li><a href="/" class="white-text">About us</a></li>
+                                <li><a href="/" class="white-text">Guest Column</a></li>
+                        
+                            </ul>
+                            <ul class="sidenav " id="mobile-menu">
+                                <li><a href="/">Insolvency</a></li>
+                                <li><a href="/">Contract Specific Relief</a></li>
+                                <li><a href="/">Arbitration</a></li>
+                                <li><a href="/">About us</a></li>
+                                <li><a href="/">Guest Coulum</a></li>
           
-    
-      </footer>
-    
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
-    <!-- <script>var aid=document.getElementById("aid").textContent.toString();</script> -->
-
-    <script src="/fbc.js"></script>
-    <script>
-    var aid=document.getElementById("aid").textContent.toString();</script>
-    <script src="/backendarticle.js"></script>
-    
-    
-   
- 
-    
-    
-    
-      <script>
-        $(document).ready(function(){
-            $('.sidenav').sidenav();
-        });
-        function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
- 
-function savecomment(){
- 
-     var name=document.getElementById("name").value;
-     var email=document.getElementById("email").value;
-     var website=document.getElementById("website").value;
-     var comment=document.getElementById("comment").value;
-
-    
-    console.log(aid,name,email,website,comment);
-   if(name=="" || email===""){
-        alert("Required fields are mandatory");
-
-     }
-     else{  if(!validateEmail(email))
-     alert("email is invalid");
-     else{
-         //save in firebase
-         db.collection("home-page").doc(aid.toString().trim()).collection("comments").add({
-             name:name,
-             email:email,
-             website:website,
-             comment:comment,
-             timestamp:(new Date()).getTime()
-         }).then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
-    alert("Comment Posted")
-})
-.catch(function(error) {
-    console.error("Error adding document: ", error);
-});
-     }
-     }
-    }
-  
-  // dispaly the data in paradox paragraph
-    var t= document.getElementById("data").textContent.toString();
-    console.log(t);
-    document.getElementById("paradox").innerHTML=t
-    
-     
-   
-      </script>
-      <script>
-      </script>
-     
-     <style>
-     .resizer{
-        height: 400px;
-  width: 600px;
-  object-fit: cover;
-
-
-
-     }
-     .flex-container {
-   
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self:center
-}
-.contents{
-    line-height: 2
-}
-.name{
-    margin-bottom: 0px; font-size: 16px
-}
-.time{
-    font-size: 12px; color: grey; margin-bottom: 0px; margin-top: 0px;
-}
-.comment{
-    margin-top: 3px; font-size: 15px;
-    font-family: 'Roboto Slab' serif; font-size: 18px;
-     color: #292929;letter-spacing: .01rem
-}
-
-</style>
-      
-     
-      
+                        
+                            </ul>
+                       </div>
+                        
+                   </div>
+                 </nav>
+                 </div>
+</header>
+        <!-- article section here-->
         
-    </body>
-    </html>
+        <!-- testing article section-->
+        <div class="row" style=" background: rgb(243, 243, 243)">
+       
+            <div class="col l2"></div>
+            <div class="col l8 s12 m12">
+                    <div class="card-panel " style="
+                    background-color: rgb(255, 255, 255);
+                   padding: 4%;
+                    ">
+                        <div style="padding: 9%">
+        
+                            <h4 id="heading" style="color: #333333 ;margin-bottom: 10%; font-family: 'Roboto Slab', sans-serif; margin-bottom: 0px">
+                                <%= tt%>
+                            </h4>
+                            <p style="font-size: 14px; color: grey; margin-top: 5px; margin-bottom: 30px">John Doe, 31st
+                                November, 2012</p>
+                            <p id="data" style="display: none;">
+                                <%= data %>
+                            </p>
+                            <p id="paradox" class="contents" style="font-family: 'Roboto Slab', serif; font-size: 18px; color: #292929;letter-spacing: .01rem">
+        
+                                    <%= data %>
+                            </p>
+        
+                            <div class="divider"></div>
+                            <br>
+                            <br>
+        
+                            <p id="aid" style=" visibility: hidden"><b>
+                                    <%= aid %></b> </p>
+                            <br>
+                            <br>
+                                                </div>
+        
+                    </div>
+                    
+
+            </div>
+            <div class="col l2"></div>
+        </div>
+        <!-- comments section -->
+        
+        <!--testing comments section-->
+        <div class="row" style="background: rgb(243, 243, 243)">
+            <div class="col l2"></div>
+            <div class="col l8 s12 m12">
+                <div class="card-panel" style="background-color: rgb(255, 255, 255);
+                 padding: 4%; ">
+                  <div style="padding-right: 9%; padding-left: 9%">
+
+
+                        <h4 style="text-align: center; color: #333333 ;margin-bottom: 10%; font-family: 'Roboto Slab', sans-serif; margin-bottom: 0px">Leave
+                            a comment</h4>
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12" style="margin-bottom: 5px">
+                                        <textarea id="comment" class="materialize-textarea"></textarea>
+                                        <label for="comment">Comment</label>
+    
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="name" type="text" class="validate">
+                                <label for="name">Name*</label>
+                            </div>
+                        </div>
+    
+    
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="wrong" data-success="right">Email*</label>
+    
+                            </div>
+                        </div>
+    
+    
+                        <div class="input-field col s12">
+                            <input id="website" type="text">
+                            <label for="website">Website</label>
+                        </div>
+                        <br>
+                        <button class="btn waves-effect waves-light" type="submit" name="action" onclick="savecomment()">Post
+                            Comment
+                            <i class="material-icons right">send</i>
+                        </button>
+    
+    
+                    </div>
+                    <div style="margin-top: 20px" class="divider"></div>
+                    <br>
+                    <div style="padding-left: 10%; padding-right: 10%">
+    
+                        <h4 style="text-align: center;color: #333333 ;margin-bottom: 10%; font-family: 'Roboto Slab', sans-serif; margin-bottom: 0px">Comments
+                        </h4>
+                        <!-- Comments go here -->
+                        <div id="foo">
+    
+    
+                        </div>
+            </div>
+                 
+                
+                </div>
+
+            </div>
+            <div class="col l2"></div>
+
+
+        </div>
+
+
+        <!-- footer -->
+        <footer class="page-footer grey darken-3">
+            <div class=container>
+                <div class=row>
+                    <div class="col s12 l6">
+                        <h5>About us</h4>
+                            <p>Information</p>
+                            <p>Privacy Policy</p>
+                    </div>
+                    <div class="col s12 l4 offset-l2">
+                        <h5>Connect</h5>
+                        <ul>
+                            <li>
+                                <a href="" class="grey-text text-lighten-3">
+                                    Facebook
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="" class="grey-text text-lighten-3">
+                                    Instagram
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright grey darken-4">
+                <div class="container center-align">
+                    &copy; 2018 legal
+                </div>
+            </div>
+
+
+        </footer>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+        <!-- <script>var aid=document.getElementById("aid").textContent.toString();</script> -->
+
+        <script src="/fbc.js"></script>
+        <script>
+            var aid = document.getElementById("aid").textContent.toString();</script>
+        <script src="/backendarticle.js"></script>
+
+
+
+
+
+
+
+        <script>
+            $(document).ready(function () {
+                $('.sidenav').sidenav();
+            });
+            function validateEmail(email) {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+
+            function savecomment() {
+
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var website = document.getElementById("website").value;
+                var comment = document.getElementById("comment").value;
+
+
+                console.log(aid, name, email, website, comment);
+                if (name == "" || email === "") {
+                    alert("Required fields are mandatory");
+
+                }
+                else {
+                    if (!validateEmail(email))
+                        alert("email is invalid");
+                    else {
+                        //save in firebase
+                        db.collection("home-page").doc(aid.toString().trim()).collection("comments").add({
+                            name: name,
+                            email: email,
+                            website: website,
+                            comment: comment,
+                            timestamp: (new Date()).getTime()
+                        }).then(function (docRef) {
+                            console.log("Document written with ID: ", docRef.id);
+                            alert("Comment Posted")
+                        })
+                            .catch(function (error) {
+                                console.error("Error adding document: ", error);
+                            });
+                    }
+                }
+            }
+
+            // dispaly the data in paradox paragraph
+            var t = document.getElementById("data").textContent.toString();
+            console.log(t);
+            document.getElementById("paradox").innerHTML = t
+
+
+
+        </script>
+        <script>
+        </script>
+
+        <style>
+            .resizer {
+                height: 400px;
+                width: 600px;
+                object-fit: cover;
+
+
+
+            }
+
+            .flex-container {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center
+            }
+
+            .contents {
+                line-height: 2
+            }
+
+            .name {
+                margin-bottom: 0px;
+                font-size: 16px
+            }
+
+            .time {
+                font-size: 12px;
+                color: grey;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .comment {
+                margin-top: 3px;
+                font-size: 15px;
+                font-family: 'Roboto Slab'serif;
+                font-size: 18px;
+                color: #292929;
+                letter-spacing: .01rem
+            }
+        </style>
+
+
+
+
+</body>
+
+</html>
