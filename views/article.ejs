@@ -24,9 +24,15 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <title>Gavel and Beyond</title>
+    <script>
+            function myFunction() {
+            var x = document.URL;
+            document.getElementById("ankan").src = 'https://www.facebook.com/plugins/share_button.php?href='+x+'&layout=button&size=large&mobile_iframe=true&appId=272577963383633&width=73&height=28';
+           }
+           </script>
 </head>
 
-<body class="light -grey" style="background:rgb(243, 243, 243) ">
+<body class="light -grey" style="background:rgb(243, 243, 243) " onload="myFunction()">
 
     <!-- navbar -->
     <header>
@@ -79,6 +85,8 @@
                             </h4>
                             <p style="font-size: 14px; color: grey; margin-top: 5px; margin-bottom: 30px">John Doe, 31st
                                 November, 2012</p>
+                                <iframe src="" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                                
                             <p id="data" style="display: none;">
                                 <%= data %>
                             </p>

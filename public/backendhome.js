@@ -56,7 +56,7 @@ var allarticles = homepages.get()
 
 
     var column = document.createElement("div");
-    column.setAttribute('class', 'col s12 m5 l4');
+    column.setAttribute('class', 'col s12 m12 l4');
     var card=document.createElement("div");
     card.setAttribute('class','card hoverable');
   
