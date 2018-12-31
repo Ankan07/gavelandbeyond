@@ -36,7 +36,7 @@ var homepages = db.collection('home-page');
 var allarticles = homepages.get()
   .then(snapshot => {
     snapshot.forEach(doc => {
-     console.log(doc.id, '=>', doc.data());
+    //  console.log(doc.id, '=>', doc.data());
 
     renderarticle(doc);
     // renderimage(doc);
@@ -56,9 +56,10 @@ var allarticles = homepages.get()
 
 
     var column = document.createElement("div");
-    column.setAttribute('class', 'col s12 m12 l4');
+    column.setAttribute('class', 'col s12 m12 l6');
     var card=document.createElement("div");
     card.setAttribute('class','card hoverable');
+    card.setAttribute('style','background-color: ivory');
   
     // var cardimage=document.createElement("div");
     // cardimage.setAttribute('class','card-image waves-effect waves-block waves-light');
@@ -83,7 +84,9 @@ var allarticles = homepages.get()
     // span.setAttribute('class',"truncate")
      var para= document.createElement("P");
      var t = document.createTextNode(doc.data().subtitlehome.substring(0,200)+"...");
-     para.setAttribute("class","cardpara");     // Create a text node
+     para.setAttribute("class","cardpara"); 
+     para.setAttribute("style","font-family: 'Quicksand', sans-serif;");
+         // Create a text node
 para.appendChild(t); 
 cardcontent.appendChild(span);
 cardcontent.appendChild(para);
@@ -127,3 +130,32 @@ row.appendChild(link);
 // v.appendChild(cm);
   } 
  
+function savesubscribecomment(){
+
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+
+
+  if(name == "" || email=="" ){
+    alert("Fields with * are mandatory");
+  }
+  else{
+    db.collection("subscribe").add({
+
+     name:name,
+     email:email,
+     timestamp: (new Date()).getTime()
+
+    }).then(function (docRef) {
+                            
+      alert("Thanks for subscribing")
+  })
+      .catch(function (error) {
+          console.error("Error adding document: ", error);
+      })
+
+  }
+  
+  
+}

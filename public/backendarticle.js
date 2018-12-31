@@ -2,7 +2,7 @@
 // console.log("klnk",aid);
     db.collection("home-page").doc(aid.toString().trim()).collection("comments").orderBy("timestamp", "desc").get().then(function(querySnapshot) { 
                  querySnapshot.forEach(function(doc) { 
-                    var x=doc.data();
+                   // var x=doc.data();
                 // console.log(doc.data());
                 // console.log("inside here");
                 var array=['January','February','March',"April","May","June","July","August","September","October","November","December"]
