@@ -82,7 +82,7 @@ var allarticles = homepages.get()
      span.appendChild(i);
     // span.setAttribute('class',"truncate")
      var para= document.createElement("P");
-     var t = document.createTextNode(doc.data().subtitle.substring(0,200)+"...");
+     var t = document.createTextNode(doc.data().subtitlehome.substring(0,200)+"...");
      para.setAttribute("class","cardpara");     // Create a text node
 para.appendChild(t); 
 cardcontent.appendChild(span);

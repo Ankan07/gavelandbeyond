@@ -85,7 +85,11 @@
                             </h4>
                             <p style="font-size: 14px; color: grey; margin-top: 5px; margin-bottom: 30px">John Doe, 31st
                                 November, 2012</p>
-                                <iframe src="" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                                <iframe src="" id="ankan" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                                
+                                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" 
+                                data-text="" 
+                                data-url="" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                 
                             <p id="data" style="display: none;">
                                 <%= data %>
@@ -124,40 +128,59 @@
 
                         <h4 style="text-align: center; color: #333333 ;margin-bottom: 10%; font-family: 'Roboto Slab', sans-serif; margin-bottom: 0px">Leave
                             a comment</h4>
-                        <div class="row">
-                            <form class="col s12">
-                                <div class="row">
-                                    <div class="input-field col s12" style="margin-bottom: 5px">
-                                        <textarea id="comment" class="materialize-textarea"></textarea>
-                                        <label for="comment">Comment</label>
-    
+                            <p>Comment</p>
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col s12" style="margin-bottom: 5px">
+                                            <textarea id="comment" rows="10" style="height: 150px" cols="50" placeholder='Enter your comment...'></textarea>
+        
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="row">
+                                </form>
+                            </div>
+                        <!-- <div class="row">
                             <div class="input-field col s12">
                                 <input id="name" type="text" class="validate">
                                 <label for="name">Name*</label>
                             </div>
-                        </div>
-    
-    
+                        </div> -->
                         <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="email" class="validate">
-                                <label for="email" data-error="wrong" data-success="right">Email*</label>
-    
+                            <div class="col l6 m6 s12">
+                                <p>Name<span style="color: red">*</span></p>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <textarea id="name" placeholder="Name" type="text" class="validate"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l6 m6 s12">
+                                <p>Email<span style="color: red">*</span></p>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <textarea id="email" type="email" placeholder="your@email.com" class="validate"></textarea>
+                                        <!-- <label for="email" data-error="wrong" data-success="right">Email*</label> --> 
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        
+    
+                        
+                        
     
     
-                        <div class="input-field col s12">
-                            <input id="website" type="text">
-                            <label for="website">Website</label>
+                        <p>Website<span style="color: red">*</span></p>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="website" placeholder="website" type="text"></textarea>
+                                <!-- <label for="website">Website</label> -->
+                            </div>
                         </div>
+                        
                         <br>
-                        <button class="btn waves-effect waves-light" type="submit" name="action" onclick="savecomment()">Post
+                        <button class="btn waves-effect waves-light" style="background: #bf360c !important" type="submit" name="action" onclick="savecomment()">Post
                             Comment
                             <i class="material-icons right">send</i>
                         </button>
@@ -334,9 +357,9 @@
 
             .comment {
                 margin-top: 3px;
-                font-size: 15px;
+                 
                 font-family: 'Roboto Slab'serif;
-                font-size: 18px;
+                font-size: 14px;
                 color: #292929;
                 letter-spacing: .01rem
             }
