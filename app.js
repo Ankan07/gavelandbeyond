@@ -43,7 +43,7 @@ var articleid=req.params.id;
           res.render('article.ejs',{data:"ERROR 404 NOT FOUND",pictureurl:""});
         } else {
           // console.log('Document data:', doc.data());
-  res.render('article.ejs',{data:doc.data().subtitle,pictureurl:doc.data().pictureurl,aid:articleid,tt:doc.data().title,author:doc.data().author,subtitlehome:doc.data().subtitlehome});
+          res.render('article.ejs',{metadesc:doc.data().subtitlehome.substring(0,150),data:doc.data().subtitle,pictureurl:doc.data().pictureurl,aid:articleid,tt:doc.data().title,author:doc.data().author,subtitlehome:doc.data().subtitlehome});
         }
       })
       .catch(err => {

@@ -7,14 +7,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="<%=tt%>">
+    <meta itemprop="description" content="<%=metadesc%>">
+    <meta itemprop="image" content="">
 
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://www.gavelandbeyond.in/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%=tt%>">
+    <meta property="og:description" content="<%=metadesc%>">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%=tt%>">
+    <meta name="twitter:description" content="<%=metadesc%>">
+    <meta name="twitter:image" content="">
 
     <link href="https://fonts.googleapis.com/css?family=Coustard|Questrial" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300, 700" rel="stylesheet">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Domine: 400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -27,10 +43,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <title>Gavel and Beyond</title>
     <script>
-            function myFunction() {
+        function myFunction() {
             var x = document.URL;
             document.getElementById("ankan").src = 'https://www.facebook.com/plugins/share_button.php?href='+x+'&layout=button&size=large&mobile_iframe=true&appId=272577963383633&width=73&height=28';
-           }
+        
+        }
            </script>
 </head>
 
@@ -105,6 +122,7 @@
         
                             <p id="aid" style=" visibility: hidden"><b>
                                     <%= aid %></b> </p>
+                                   
                             <br>
                             <br>
                                                 </div>
@@ -258,7 +276,8 @@
 
         <script src="/fbc.js"></script>
         <script>
-            var aid = document.getElementById("aid").textContent.toString();</script>
+            var aid = document.getElementById("aid").textContent.toString();
+           </script>
         <script src="/backendarticle.js"></script>
 
 
